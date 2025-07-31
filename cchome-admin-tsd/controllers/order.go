@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/lib"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/lib"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 )
 

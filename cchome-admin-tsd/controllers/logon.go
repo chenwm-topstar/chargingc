@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

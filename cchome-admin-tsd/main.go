@@ -6,11 +6,10 @@ package main
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/autoupgrade"
+	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/template"
+	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/routers"
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/autoupgrade"
-	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/template"
-	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsdrouters"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac"
 	"github.com/chenwm-topstar/chargingc/utils/flags"
 	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 	"github.com/chenwm-topstar/chargingc/utils/redigo"

@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/appproto"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/appproto"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/tidwall/gjson"
 )

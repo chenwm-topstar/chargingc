@@ -3,7 +3,7 @@ package protocol
 import (
 	"errors"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/itransac"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/itransac"
 )
 
 // ErrPayloadNotSupport 不支持上/下行转换

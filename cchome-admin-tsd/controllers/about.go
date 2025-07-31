@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 )
 

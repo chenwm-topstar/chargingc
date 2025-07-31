@@ -3,9 +3,9 @@ package evsectl
 import (
 	"fmt"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/appproto"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/protocol"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/appproto"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/protocol"
 	"golang.org/x/sync/singleflight"
 )
 

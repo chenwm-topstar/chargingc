@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/appproto"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/evsectl"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/appproto"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/evsectl"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"github.com/chenwm-topstar/chargingc/pbs/commonpb"
 	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 	"github.com/chenwm-topstar/chargingc/utils/lg"

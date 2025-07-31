@@ -3,8 +3,8 @@ package autoupgrade
 import (
 	"context"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/evsectl"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/evsectl"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
 	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 	"github.com/sirupsen/logrus"
 )

@@ -15,8 +15,8 @@ import (
 	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/sirupsen/logrus"
 
-	pHttp "github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/http"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/log"
+	pHttp "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/http"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/log"
 	"google.golang.org/grpc/metadata"
 )
 

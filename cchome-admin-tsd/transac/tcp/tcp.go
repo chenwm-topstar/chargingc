@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/itransac"
-	gp "github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/protocol"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/itransac"
+	gp "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/protocol"
 	"github.com/funny/link"
 	"github.com/funny/slab"
 	"github.com/sirupsen/logrus"

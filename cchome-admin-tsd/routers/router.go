@@ -14,7 +14,7 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdcontrollers"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/controllers"
 )
 
 func init() {

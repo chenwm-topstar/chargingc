@@ -4,10 +4,10 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdmodels"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/itransac"
-	gp "github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/protocol"
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdtransac/tcp"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/itransac"
+	gp "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/protocol"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/tcp"
 	"github.com/chenwm-topstar/chargingc/utils/abiz/access/codec"
 	"github.com/sirupsen/logrus"
 )

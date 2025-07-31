@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/chenwm-topstar/chargingc/cchome-admin-tsdinternal/lib"
+	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/lib"
 )
 
 type Tree struct {
