@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="v2.4.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pkg/mod/cache/download/gopkg.in/yaml.v2/@v/v2.4.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

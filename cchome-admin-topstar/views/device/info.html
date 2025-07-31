@@ -1,0 +1,129 @@
+<style>
+    .dl-horizontal dd {
+        margin-left: 100px;
+    }
+    .dl-horizontal dt {
+        width: 90px;
+    }
+</style>
+<div class="panel panel-default panel-intro">
+    <div class="panel-body">
+        <div class="tab-content">
+            <div class="tab-pane fade active in">
+                <div class="col-md-3">
+                    <div class="box box-solid">
+                        <div class="box-header with-border">
+                            <!-- <h3 class="box-title">设备信息</h3> -->
+                            <!-- <h3 class="profile-username text-center">{{.config.evse.pn}}-{{.config.evse.sn}}</h3> -->
+                            <h3 class="profile-username text-center">basic information</h3>
+                        </div>
+                        <table id="evse" class="table table-striped table-bordered table-hover" 
+                            data-search="false"
+                            data-common-search="false"
+                            data-show-refresh="false"
+                            data-show-toggle="false"
+                            data-show-columns="false"
+                            data-show-export="false"
+                            data-detail-view="false"
+                            data-detail-formatter="detailFormatter"
+                            data-minimum-count-columns="2"
+                            data-show-pagination-switch="false"
+                            data-pagination="false"
+                            data-id-field="id"
+                            data-page-list="[10, 25, 50, 100, ALL]"
+                            data-show-footer="false"
+                            width="100%">
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-md-9 table-responsive">
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><b>devcie control</b></div>
+                        <div class="panel-body">
+                            <!-- <a class="btn btn-app btn-ajax" href="/device/trigger?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}">
+                                <i class="fa fa-refresh"></i> 触发遥测
+                            </a> -->
+                            <!-- <a class="btn btn-app btn-ajax" data-confirm="确认重启程序？" href="/device/reboot?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}">
+                                <i class="fa fa-repeat"></i> 重启程序
+                            </a> -->
+                            <a class="btn btn-app btn-dialog btn-dialog-shade" href="/device/upgrade?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}" data-shade="0.5" data-area='["60%","35%"]' title="{{.config.evse.pn}}-{{.config.evse.sn}} upgrade">
+                                <i class="fa fa-download"></i> device upgrade 
+                            </a>
+                            <a class="btn btn-app btn-dialog btn-dialog-shade" href="/device/setconfig?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}"  data-shade="0.5" data-area='["90%","90%"]' title="{{.config.evse.pn}}-{{.config.evse.sn}} set config">
+                                <i class="fa fa-cogs"></i> set config
+                            </a>
+                            <a class="btn btn-app btn-dialog btn-dialog-shade" href="/device/getappointconfig?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}" data-shade="0.5" data-area='["90%","90%"]' title="{{.config.evse.pn}}-{{.config.evse.sn}} get appoint config">
+                                <i class="fa fa-ellipsis-h"></i> get config
+                            </a>
+                            <a class="btn btn-app btn-ajax"  data-confirm="are you sure reset device？" href="/device/reset?evseid={{.config.evse.evseid}}&no={{.config.evse.no}}">
+                                <i class="fa fa-circle-o-notch"></i> reset
+                            </a>
+                        </div>
+                    </div>    
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><b>devcie connector</b></div>
+                        <div class="panel-body" style="padding: 0px;">
+                            <table id="connector" class="table table-striped table-bordered table-hover" data-toolbar="#toolbar"
+                                data-search="false"
+                                data-common-search="false"
+                                data-show-refresh="false"
+                                data-show-toggle="false"
+                                data-show-columns="false"
+                                data-show-export="false"
+                                data-detail-view="false"
+                                data-detail-formatter="detailFormatter"
+                                data-minimum-count-columns="2"
+                                data-show-pagination-switch="false"
+                                data-pagination="false"
+                                data-id-field="id"
+                                data-page-list="[10, 25, 50, 100, ALL]"
+                                data-show-footer="false"
+                                width="100%">
+                            </table>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script id="itemtpl" type="text/html">
+    <!--
+    如果启用了templateView,默认调用的是itemtpl这个模板，可以通过设置templateFormatter来修改
+    在当前模板中可以使用三个变量(item:行数据,i:当前第几行,data:所有的行数据)
+    此模板引擎使用的是art-template的native,可参考官方文档
+    -->
+    {%each item.measures as m i%}
+    <div class="col-sm-4 col-md-3">
+        <div class="thumbnail example">
+            <span class="btn btn-info">{%m.measurand_desc%}</span>
+            <span class="pull-right">{%m.measurand%}</span>
+            <div class="caption" align="center">
+                <p class="text-muted" style="font-size:20px;font-weight:bold">{%m.value_desc%}</p>
+            </div>
+        </div>
+    </div>
+    {%/each%}
+</script>
+<script>
+    function ajax(url) {
+        Fast.api.ajax({
+            url:url,
+        }, function(data, ret){
+            var x = 0;
+            function countSecond()
+            {
+                if(x<3) {
+                    x = x+1;
+                    $("#table").bootstrapTable('refresh', {silent: true});
+                    setTimeout(countSecond, 3000)
+                }
+            }
+            countSecond();
+        });
+    }
+</script>

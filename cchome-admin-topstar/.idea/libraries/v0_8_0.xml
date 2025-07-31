@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="v0.8.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pkg/mod/cache/download/golang.org/x/sys/@v/v0.8.0.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
