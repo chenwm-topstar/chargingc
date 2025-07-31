@@ -1,0 +1,51 @@
+<div class="nav-tabs-custom">
+    <div class="tab-content ">
+        <div class="tab-pane row active" id="station-tab">
+            <div class="col-md-12">        
+                <form id="dict-form" class="form-horizontal form-ajax" role="form" data-toggle="validator" method="POST" action="">
+                    <div class="form-group">
+                        <label for="vendor" class="control-label col-xs-12 col-sm-4">vendor:</label>
+                        <div class="col-xs-12 col-sm-7">
+                            <input type="text" class="form-control" id="vendor" name="vendor" placeholder="" value="{{.lv.vendor}}"  data-rule="required;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="pn" class="control-label col-xs-12 col-sm-4">PN:</label>
+                        <div class="col-xs-12 col-sm-7">
+                            <input type="text" class="form-control" id="pn" name="pn" placeholder="" value="{{.lv.Pn}}"  data-rule="required;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="latest_ota_version" class="control-label col-xs-12 col-sm-4">Latest OTA Version:</label>
+                        <div class="col-xs-12 col-sm-7">
+                            <input type="text" class="form-control" id="latest_ota_version" name="latest_ota_version" placeholder="" value="{{.lv.LastVersion}}"  data-rule="required;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="latest_ota_address" class="control-label col-xs-12 col-sm-4">Latest OTA Address:</label>
+                        <div class="col-xs-12 col-sm-7">
+                            <input type="text" class="form-control" id="latest_ota_address" name="latest_ota_address" placeholder="" value="{{.lv.UpgradeAddress}}"  data-rule="required;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="latest_ota_desc" class="control-label col-xs-12 col-sm-4">Latest OTA desc:</label>
+                        <div class="col-xs-12 col-sm-7">
+                            <textarea type="txt" class="form-control limited" id="latest_ota_desc" name="latest_ota_desc" value="" data-rule="required;" placeholder="" style="margin: 0px -260px 0px 0px; height: 200px;">{{.lv.UpgradeDesc}}</textarea>
+                        </div>
+                    </div>
+                 
+                    <div class="form-group layer-footer">
+                        <label class="control-label col-xs-12 col-sm-4"></label>
+                        <div class="col-xs-12 col-sm-7">
+                            <button type="submit" class="btn btn-success btn-embossed">submit</button>
+                            <button type="reset" class="btn btn-default btn-embossed">reset</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    

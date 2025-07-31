@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <!-- 加载样式及META信息 -->
+    {{template "meta.html" .}}
+</head>
+<body class="hold-transition skin-green sidebar-mini fixed " id="tabs">
+    <div class="wrapper">
+        {{template "header.html" .}}
+        <!-- 左侧菜单栏 -->
+        <aside class="main-sidebar">
+        <!-- 左侧菜单栏 -->
+        {{template "components/menu.html" .}}
+        </aside>
+        <!-- 主体内容区域 -->
+        <div class="content-wrapper tab-content tab-addtabs">
+            {{.LayoutContent}}
+        </div>
+        {{template "footer.html" .}}
+    </div>
+    <!-- 加载JS脚本 -->
+    <script src="/assets/js/require.js" data-main="/assets/js/require-backend.js?v=1.0.1"></script>
+</body>
+</html>
