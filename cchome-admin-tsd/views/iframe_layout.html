@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{index .config "language"}}">
+
+<head>
+    <!-- 加载样式及META信息 -->
+    {{template "meta.html" .}}
+</head>
+
+<!-- {:defined('IS_DIALOG') && IS_DIALOG ? 'is-dialog' : ''}" -->
+
+<body class='inside-header inside-aside {{if eq .isDialog true}}is-dialog{{end}}'>
+    <div id="main" role="main">
+        <div class="tab-content tab-addtabs">
+            <div id="content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <!-- <section class="content-header hide">
+                            <h1>
+                                Dashboard
+                                <small>控制台</small>
+                            </h1>
+                        </section>
+                        {{if eq .isDialog false}}
+                        <div id="ribbon">
+                            <ol class="breadcrumb pull-left">
+                                <li><a href="/dashboard/" class="addtabsit"><i class="fa fa-dashboard"></i> 控制台</a></li>
+                                {{range .breadcrumb}}
+                                <li>{{if eq .href ""}}{{.title}}{{else}}<a href='{{.href}}' class="addtabsit">{{.title}}</a>{{end}}</li>
+                                {{end}}
+                            </ol>
+                        </div>
+                        {{end}} -->
+                        <div class="content">
+                            {{.LayoutContent}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 加载JS脚本 -->
+    <script src="/assets/js/require.js" data-main="/assets/js/require-backend.js?v=1.0.1"></script>
+</body>
+
+</html>

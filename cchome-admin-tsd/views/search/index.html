@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{template "meta.html" .}}
+    <style type="text/css">
+        body {
+            /* color: #999; */
+            color: #fff;
+            /* background:url('/assets/img/loginbg.jpg'); */
+            background-size: cover;
+        }
+
+        a {
+            color: #f1f4f6;
+            /* background-color: #18bc9c; */
+        }
+    </style>
+    <link href="/assets/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="full-section" style="padding-top: 140px;">
+        <div class="search-area container">
+            <h3 class="search-title" >init config</h3>
+            <form  id="search-form" class="form-horizontal form-ajax index-search-form clearfix " role="form" data-toggle="validator" method="post">
+                <input type="text" placeholder="请输入设备编号进行搜索，例如:28120039" class="search-term" id="pn-sn" name="pn-sn" autocomplete="off">
+                <button type="submit" class="btn search-btn">搜索设备</button>
+                <!-- <a href="javascript:search()" class="search-btn btn-addtabs" name="search-sn">搜索设备</a> -->
+            </form>
+        </div>
+    </div>
+</body>
+
+
