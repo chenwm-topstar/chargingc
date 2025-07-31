@@ -1,0 +1,92 @@
+{{define "header.html"}}
+<!-- 头部区域 -->
+<header id="header" class="main-header">
+    <!-- Logo -->
+    <a href="javascript:;" class="logo">
+        <!-- 迷你模式下Logo的大小为50X50 -->
+        <span class="logo-mini">admin</span>
+        <!-- 普通模式下Logo -->
+        <span class="logo-lg"><b>charingc</b> home admin</span>
+    </a>
+
+    <!-- 顶部通栏样式 -->
+    <nav class="navbar navbar-static-top">
+
+        <!--第一级菜单-->
+        <div id="firstnav">
+            <!-- 边栏切换按钮-->
+            <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+
+            <!--如果不想在顶部显示角标,则给ul加上disable-top-badge类即可-->
+            <ul class="nav nav-tabs nav-addtabs disable-top-badge hidden-xs" role="tablist">
+                {{.navlist|unescaped}}
+            </ul>
+
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+
+                    <!-- 全屏按钮 -->
+                    <li class="hidden-xs">
+                        <a href="#" data-toggle="fullscreen"><i class="fa fa-arrows-alt"></i></a>
+                    </li>
+
+                    <li>
+                        <a href="#" data-toggle="refresh"><i class="fa fa-refresh"></i></a>
+                    </li>
+
+                    <!-- 账号信息下拉框 -->
+                    <li class="dropdown user user-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <!-- <img src="/assets/img/avatar.png" class="user-image" alt="Admin"> -->
+                            <img src="/assets/img/ic_512.png" class="user-image" alt="Admin">
+                            <span class="hidden-xs">{{with .manager.GetModel}}{{.Name}}{{end}}</span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                                <img src="/assets/img/ic_512.png" class="img-circle" alt="">
+
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="user-body">
+                                <div class="row">
+                                    {{/*<div class="col-xs-4 text-center">*/}}
+                                        {{/*<a href="https://www.fastadmin.net" target="_blank">FastAdmin</a>*/}}
+                                    {{/*</div>*/}}
+                                    {{/*<div class="col-xs-4 text-center">*/}}
+                                        {{/*<a href="https://forum.fastadmin.net" target="_blank">交流社区</a>*/}}
+                                    {{/*</div>*/}}
+                                    {{/*<div class="col-xs-4 text-center">*/}}
+                                        {{/*<a href="https://doc.fastadmin.net" target="_blank">官方文档</a>*/}}
+                                    {{/*</div>*/}}
+                                </div>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="manager/edit" class="btn btn-primary btn-dialog" data-shade="0.5" title="change passwd" ><i class="fa fa-user"></i>
+                                        change passwd</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="/index/logout" class="btn btn-danger"><i class="fa fa-sign-out"></i>
+                                        logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 控制栏切换按钮 -->
+                    {{/*<li class="hidden-xs">*/}}
+                        {{/*<a href="javascript:;" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>*/}}
+                    {{/*</li>*/}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <style>
+        .bootstrap-select .status{background:#f0f0f0;clear:both;color:#999;font-size:11px;font-style:italic;font-weight:500;line-height:1;margin-bottom:-5px;padding:10px 20px}
+    </style>
+
+</header>
+{{end}}

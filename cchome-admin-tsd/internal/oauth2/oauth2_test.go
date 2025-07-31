@@ -1,0 +1,11 @@
+package oauth2
+
+import "testing"
+
+func TestAppleLogin(t *testing.T) {
+	token := `eyJraWQiOiJmaDZCczhDIiwiYWxnIjoiUlMyNTYifQ.eyJpc3MiOiJodHRwczovL2FwcGxlaWQuYXBwbGUuY29tIiwiYXVkIjoiY29tLnRvcHN0YXIuY2hhcmdlbml1cyIsImV4cCI6MTY3MTY3Mzc4MiwiaWF0IjoxNjcxNTg3MzgyLCJzdWIiOiIwMDEwODAuMGJiNWI2MjMyMjM4NDgzZmE0NzJlOWFjNmExNTJlMDYuMDEwNCIsImNfaGFzaCI6Ik1HSkpWZkNkNUJuLTgxWHVtbU80aUEiLCJhdXRoX3RpbWUiOjE2NzE1ODczODIsIm5vbmNlX3N1cHBvcnRlZCI6dHJ1ZSwicmVhbF91c2VyX3N0YXR1cyI6Mn0.ieoHijrBuhH_5xJ3V4whFG00UL4v5qKHPCdc7Xm-JYP823XtZdYBnGAeuWz54mkhPyoLbhbsRiPU_1o01U1fIa7fzFuv7cGB8lIN0ZeWq-XS7HuBtc1gQC7EBcTMjmNVuqb7EAq3e5an8pxQEnV1j19xLh5klquSNj3CmkRObo7iph68XyQA-mHoJPU8-s9GklxDC0ti1vXhAVnw5ZVlrYwhOrFjaA57Lvv8zwsAMtJYYIp7INfk1dXJL6c_vqRA-L98KSxnLNJMtlpkHG-HvbY83HHlUJuzCzUc8MuIg-x8pqXkElSRfI5apSIthHswtTngETbyibAB6Q3V0k7xBQ`
+	userID := "001080.0bb5b6232238483fa472e9ac6a152e06.0104"
+
+	jc, err := AppleVerifyIdentityToken("com.topstar.chargenius", token, userID)
+	t.Logf("----->err:[%+v][%+v]", err, jc)
+}

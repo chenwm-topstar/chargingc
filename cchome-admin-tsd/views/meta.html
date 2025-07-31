@@ -1,0 +1,66 @@
+{{define "meta.html"}}
+
+<meta charset="utf-8">
+<title>{{.title}}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="renderer" content="webkit">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico" />
+<!-- Loading Bootstrap -->
+<link href="/assets/css/backend.css?v=1.0.1" rel="stylesheet">
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+    function ajaxErrorMsg(xhr, desc, err){
+        if(xhr.responseJSON != undefined){
+            if(xhr.responseJSON.msg == undefined){
+                return "接口报错:"+err;
+            }else{
+                return err+":"+xhr.responseJSON.msg;
+            }
+        }else{
+            return "接口报错:"+err;
+        }
+    }
+
+    var require = {config: {{.config}}};
+    // jQuery(function ($) {
+    //     //初始化窗口。
+    //     $('.modal.aside').ace_aside();
+    //     $('#aside-inside-modal').addClass('aside').ace_aside({ container: "" });
+    //     $(document).one('ajaxloadstart.page', function (e) {
+    //         $('.modal.aside').remove();
+    //         $(window).off('.aside')
+    //     });
+    //     bootbox.setLocale("zh_CN");
+    // });
+    // $.extend({
+    //     getUrlVars: function () {
+    //         var vars = [], hash;
+    //         var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    //         for (var i = 0; i < hashes.length; i++) {
+    //             hash = hashes[i].split('=');
+    //             vars.push(hash[0]);
+    //             vars[hash[0]] = hash[1];
+    //         }
+    //         return vars;
+    //     },
+    //     getUrlVar: function (name) {
+    //         return $.getUrlVars()[name];
+    //     }
+    // });
+</script>
+<!-- <style>
+    span .select-item {
+        margin-left: 10px;
+    }
+    .progress {
+        background: #948e8e;
+        /* margin-bottom: 0px; */
+    }
+</style> -->
+{{end}}
