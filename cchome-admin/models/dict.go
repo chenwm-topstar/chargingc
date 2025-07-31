@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 
-	"gitlab.goiot.net/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 )
 
 type KindDictType int

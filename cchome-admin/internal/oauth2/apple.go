@@ -8,9 +8,9 @@ import (
 	"math/big"
 	"strings"
 
+	"github.com/chenwm-topstar/chargingc/utils/requests"
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/pkg/errors"
-	"gitlab.goiot.net/chargingc/utils/requests"
 )
 
 var (

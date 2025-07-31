@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/appproto"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/tidwall/gjson"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/appproto"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type AppController struct {

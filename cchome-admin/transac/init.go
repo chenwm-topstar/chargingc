@@ -4,12 +4,12 @@ import (
 	"encoding/binary"
 	"time"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac/itransac"
+	gp "github.com/chenwm-topstar/chargingc/cchome-admin/transac/protocol"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac/tcp"
+	"github.com/chenwm-topstar/chargingc/utils/abiz/access/codec"
 	"github.com/sirupsen/logrus"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/cchome-admin/transac/itransac"
-	gp "gitlab.goiot.net/chargingc/cchome-admin/transac/protocol"
-	"gitlab.goiot.net/chargingc/cchome-admin/transac/tcp"
-	"gitlab.goiot.net/chargingc/utils/abiz/access/codec"
 )
 
 var tcpac *tcp.TMAC

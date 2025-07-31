@@ -3,7 +3,7 @@ package protocol
 import (
 	"errors"
 
-	"gitlab.goiot.net/chargingc/cchome-admin/transac/itransac"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac/itransac"
 )
 
 // ErrPayloadNotSupport 不支持上/下行转换

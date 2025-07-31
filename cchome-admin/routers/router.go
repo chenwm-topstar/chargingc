@@ -14,7 +14,7 @@ package routers
 
 import (
 	"github.com/astaxie/beego"
-	"gitlab.goiot.net/chargingc/cchome-admin/controllers"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/controllers"
 )
 
 func init() {

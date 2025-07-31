@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/chenwm-topstar/chargingc/pbs/commonpb"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/redigo"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/gomodule/redigo/redis"
 	"github.com/pkg/errors"
-	"gitlab.goiot.net/chargingc/pbs/commonpb"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/redigo"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type KindNetWork uint8

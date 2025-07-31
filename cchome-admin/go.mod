@@ -1,10 +1,10 @@
-module gitlab.goiot.net/chargingc/cchome-admin
+module github.com/chenwm-topstar/chargingc/cchome-admin
 
 go 1.19
 
 // replace (
-// 	gitlab.goiot.net/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24 => ../pbs
-// 	gitlab.goiot.net/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 => ../utils
+// 	github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24 => ../pbs
+// 	github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 => ../utils
 // )
 
 require (
@@ -22,8 +22,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	gitlab.goiot.net/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24
-	gitlab.goiot.net/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7
+	github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24
+	github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7
 	golang.org/x/crypto v0.5.0
 	golang.org/x/sync v0.1.0
 	google.golang.org/grpc v1.53.0

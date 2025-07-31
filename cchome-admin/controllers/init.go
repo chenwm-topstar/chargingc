@@ -4,7 +4,7 @@
 package controllers
 
 // import (
-// 	_ "gitlab.goiot.net/sde-base/golib/web/beego"
+// 	_ "github.com/chenwm-topstar/sde-base/golib/web/beego"
 // )
 
 import (

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 )
 
 type AboutController struct {

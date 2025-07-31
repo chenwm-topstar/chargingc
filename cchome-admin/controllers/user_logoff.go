@@ -6,13 +6,13 @@ import (
 	"regexp"
 	"strconv"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/utils/crypt"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/lg"
+	"github.com/chenwm-topstar/chargingc/utils/redigo"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/garyburd/redigo/redis"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/utils/crypt"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/lg"
-	"gitlab.goiot.net/chargingc/utils/redigo"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type UserLogoffController struct {

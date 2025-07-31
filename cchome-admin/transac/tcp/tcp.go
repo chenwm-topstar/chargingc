@@ -10,11 +10,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac/itransac"
+	gp "github.com/chenwm-topstar/chargingc/cchome-admin/transac/protocol"
 	"github.com/funny/link"
 	"github.com/funny/slab"
 	"github.com/sirupsen/logrus"
-	"gitlab.goiot.net/chargingc/cchome-admin/transac/itransac"
-	gp "gitlab.goiot.net/chargingc/cchome-admin/transac/protocol"
 )
 
 const connBuckets = 32

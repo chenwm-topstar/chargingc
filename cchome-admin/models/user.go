@@ -5,9 +5,9 @@ import (
 	"database/sql/driver"
 	"fmt"
 
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/pkg/errors"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type UserOAuthType int
