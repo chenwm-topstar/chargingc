@@ -1,6 +1,6 @@
 package models
 
-import "gitlab.goiot.net/chargingc/utils/uuid"
+import "github.com/chenwm-topstar/chargingc/utils/uuid"
 
 type KindAuthRuleStatus int32
 

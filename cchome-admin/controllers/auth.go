@@ -9,7 +9,7 @@ import (
 
 	"github.com/astaxie/beego/session"
 	"github.com/astaxie/beego/validation"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/auth"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/auth"
 )
 
 type Auth struct {

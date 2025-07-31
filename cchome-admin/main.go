@@ -6,14 +6,14 @@ package main
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/autoupgrade"
+	_ "github.com/chenwm-topstar/chargingc/cchome-admin/internal/template"
+	_ "github.com/chenwm-topstar/chargingc/cchome-admin/routers"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac"
+	"github.com/chenwm-topstar/chargingc/utils/flags"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/redigo"
 	"github.com/joho/godotenv"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/autoupgrade"
-	_ "gitlab.goiot.net/chargingc/cchome-admin/internal/template"
-	_ "gitlab.goiot.net/chargingc/cchome-admin/routers"
-	"gitlab.goiot.net/chargingc/cchome-admin/transac"
-	"gitlab.goiot.net/chargingc/utils/flags"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/redigo"
 )
 
 var (

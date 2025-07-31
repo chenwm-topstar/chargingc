@@ -6,14 +6,14 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/transac/itransac"
+	"github.com/chenwm-topstar/chargingc/pbs/commonpb"
+	"github.com/chenwm-topstar/chargingc/utils/abiz/access/codec"
+	"github.com/chenwm-topstar/chargingc/utils/abiz/access/driver"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/sirupsen/logrus"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/cchome-admin/transac/itransac"
-	"gitlab.goiot.net/chargingc/pbs/commonpb"
-	"gitlab.goiot.net/chargingc/utils/abiz/access/codec"
-	"gitlab.goiot.net/chargingc/utils/abiz/access/driver"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type BootReq struct {

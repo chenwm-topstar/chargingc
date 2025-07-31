@@ -12,11 +12,11 @@ import (
 	"github.com/astaxie/beego/session"
 	_ "github.com/astaxie/beego/session/redis"
 	"github.com/astaxie/beego/validation"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/sirupsen/logrus"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 
-	pHttp "gitlab.goiot.net/chargingc/cchome-admin/internal/http"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/log"
+	pHttp "github.com/chenwm-topstar/chargingc/cchome-admin/internal/http"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/log"
 	"google.golang.org/grpc/metadata"
 )
 

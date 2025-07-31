@@ -10,12 +10,12 @@ import (
 	"github.com/astaxie/beego/cache"
 	"github.com/astaxie/beego/context"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/utils/redigo"
 	"github.com/garyburd/redigo/redis"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/utils/redigo"
 )
 
-//每一个用户起一个gorouting，用于处理和监听事件
+// 每一个用户起一个gorouting，用于处理和监听事件
 var managers sync.Map
 
 func init() {

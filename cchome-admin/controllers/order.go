@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/lib"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/lib"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
 )
 
 type OrderListController struct {

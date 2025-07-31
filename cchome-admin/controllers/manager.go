@@ -3,7 +3,7 @@ package controllers
 import (
 	"net/http"
 
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
 	"golang.org/x/crypto/bcrypt"
 )
 

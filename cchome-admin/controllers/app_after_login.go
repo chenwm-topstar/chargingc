@@ -8,17 +8,17 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/appproto"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/evsectl"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/models"
+	"github.com/chenwm-topstar/chargingc/pbs/commonpb"
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/lg"
+	"github.com/chenwm-topstar/chargingc/utils/redigo"
+	"github.com/chenwm-topstar/chargingc/utils/slices"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/garyburd/redigo/redis"
 	"github.com/jinzhu/now"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/appproto"
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/evsectl"
-	"gitlab.goiot.net/chargingc/cchome-admin/models"
-	"gitlab.goiot.net/chargingc/pbs/commonpb"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/lg"
-	"gitlab.goiot.net/chargingc/utils/redigo"
-	"gitlab.goiot.net/chargingc/utils/slices"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 )
 
 type AppAfterLoginController struct {

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitlab.goiot.net/chargingc/cchome-admin/internal/lib"
+	"github.com/chenwm-topstar/chargingc/cchome-admin/internal/lib"
 )
 
 type Tree struct {
@@ -28,7 +28,7 @@ func (t *Tree) Init(arr []map[string]interface{}) {
 	t.Arr = arr
 }
 
-//得到子级数组（一级）
+// 得到子级数组（一级）
 func (t Tree) GetChild(pid interface{}) (ret []map[string]interface{}) {
 	for _, v := range t.Arr {
 		if v["pid"] == pid {
@@ -38,7 +38,7 @@ func (t Tree) GetChild(pid interface{}) (ret []map[string]interface{}) {
 	return
 }
 
-//获取指定节点的所有孩子节点
+// 获取指定节点的所有孩子节点
 func (t Tree) GetChildren(pid interface{}, withself bool) (ret []map[string]interface{}) {
 	for _, v := range t.Arr {
 		if v["pid"] == pid {
@@ -51,7 +51,7 @@ func (t Tree) GetChildren(pid interface{}, withself bool) (ret []map[string]inte
 	return
 }
 
-//读取所有孩子节点的ID
+// 读取所有孩子节点的ID
 func (t Tree) GetChildrenIDs(pid interface{}, withself bool) (ret []interface{}) {
 	for _, v := range t.GetChildren(pid, withself) {
 		ret = append(ret, v["id"])
@@ -59,7 +59,7 @@ func (t Tree) GetChildrenIDs(pid interface{}, withself bool) (ret []interface{})
 	return
 }
 
-//得到当前位置父辈数组
+// 得到当前位置父辈数组
 func (t Tree) GetParent(pid interface{}) (ret []map[string]interface{}) {
 	var _pid interface{}
 	for _, v := range t.Arr {
@@ -79,7 +79,7 @@ func (t Tree) GetParent(pid interface{}) (ret []map[string]interface{}) {
 	return
 }
 
-//得到当前位置所有父辈数组
+// 得到当前位置所有父辈数组
 func (t Tree) GetParents(pid interface{}, withself bool) (ret []map[string]interface{}) {
 	var _pid interface{}
 	for _, v := range t.Arr {
@@ -97,7 +97,7 @@ func (t Tree) GetParents(pid interface{}, withself bool) (ret []map[string]inter
 	return
 }
 
-//读取指定节点所有父类节点ID
+// 读取指定节点所有父类节点ID
 func (t Tree) GetParentsIDs(pid interface{}, withself bool) (ret []interface{}) {
 	for _, v := range t.GetParents(pid, withself) {
 		ret = append(ret, v["id"])

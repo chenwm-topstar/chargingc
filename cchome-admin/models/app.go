@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/chargingc/utils/lg"
+	"github.com/chenwm-topstar/chargingc/utils/slices"
+	"github.com/chenwm-topstar/chargingc/utils/uuid"
 	"github.com/pkg/errors"
-	"gitlab.goiot.net/chargingc/utils/gormv2"
-	"gitlab.goiot.net/chargingc/utils/lg"
-	"gitlab.goiot.net/chargingc/utils/slices"
-	"gitlab.goiot.net/chargingc/utils/uuid"
 	"gopkg.in/gomail.v2"
 )
 
