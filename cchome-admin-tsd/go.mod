@@ -1,19 +1,19 @@
-module github.com/chenwm-topstar/chargingc/cchome-admin
+module github.com/chenwm-topstar/chargingc/cchome-admin-tsd
 
 go 1.19
 
-// replace (
-// 	github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24 => ../pbs
-// 	github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 => ../utils
-// )
+ replace (
+ 	github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24 => ../pbs
+ 	github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 => ../utils
+ )
 
 require (
-	github.com/astaxie/beego v1.12.3
+	github.com/astaxie/beego v1.10.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/funny/link v0.0.0-20190805113223-98708916287b
 	github.com/funny/slab v0.0.0-20180511031532-b1fad5e5d478
 	github.com/garyburd/redigo v1.6.4
-	github.com/gomodule/redigo v2.0.0+incompatible
+	github.com/gomodule/redigo v1.9.2
 	github.com/jinzhu/now v1.1.5
 	github.com/joho/godotenv v1.4.0
 	github.com/medivhzhan/weapp/v3 v3.6.19
@@ -22,8 +22,8 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.0
 	github.com/tidwall/gjson v1.14.4
-	github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24
-	github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7
+	//github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24
+	//github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7
 	golang.org/x/crypto v0.5.0
 	golang.org/x/sync v0.1.0
 	google.golang.org/grpc v1.53.0
@@ -34,9 +34,12 @@ require (
 require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
+	github.com/chenwm-topstar/chargingc v0.0.0-20250731224554-c211635721c6 // indirect
 	github.com/ernesto-jimenez/httplogger v0.0.0-20220128121225-117514c3f345 // indirect
 	github.com/fatih/color v1.15.0 // indirect
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
+	github.com/glycerine/rbuf v0.0.0-20190314090850-75b78581bebe // indirect
+	github.com/go-logfmt/logfmt v0.6.0 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/goccy/go-json v0.10.0 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
@@ -44,6 +47,7 @@ require (
 	github.com/google/go-querystring v1.1.0 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
+	github.com/hoveychen/go-utils v0.0.0-20220822083226-7f81a180ff49 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/lnyyj/go.uuid v1.2.1 // indirect
 	github.com/magiconair/properties v1.8.7 // indirect
@@ -68,6 +72,7 @@ require (
 	github.com/subosito/gotenv v1.4.2 // indirect
 	github.com/tidwall/match v1.1.1 // indirect
 	github.com/tidwall/pretty v1.2.0 // indirect
+	github.com/vharitonsky/iniflags v0.0.0-20180513140207-a33cd0b5f3de // indirect
 	golang.org/x/net v0.8.0 // indirect
 	golang.org/x/sys v0.6.0 // indirect
 	golang.org/x/text v0.8.0 // indirect
