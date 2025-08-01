@@ -10,7 +10,7 @@ import (
 
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/appproto"
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
-	"github.com/chenwm-topstar/chargingc/utils/uuid"
+	"github.com/chenwm-topstar/utils/uuid"
 	"github.com/tidwall/gjson"
 )
 

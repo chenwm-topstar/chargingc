@@ -1,6 +1,6 @@
 package models
 
-import "github.com/chenwm-topstar/chargingc/utils/gormv2"
+import "github.com/chenwm-topstar/utils/gormv2"
 
 var OTACH chan EvseAutoUpgrade
 

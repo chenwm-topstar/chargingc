@@ -8,7 +8,7 @@ import (
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/itransac"
 	gp "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/protocol"
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac/tcp"
-	"github.com/chenwm-topstar/chargingc/utils/abiz/access/codec"
+	"github.com/chenwm-topstar/utils/abiz/access/codec"
 	"github.com/sirupsen/logrus"
 )
 

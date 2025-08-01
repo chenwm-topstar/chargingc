@@ -11,7 +11,7 @@ import (
 	"github.com/astaxie/beego/context"
 
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
-	"github.com/chenwm-topstar/chargingc/utils/redigo"
+	"github.com/chenwm-topstar/utils/redigo"
 	"github.com/garyburd/redigo/redis"
 )
 

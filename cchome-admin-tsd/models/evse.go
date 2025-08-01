@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/chenwm-topstar/chargingc/pbs/commonpb"
-	"github.com/chenwm-topstar/chargingc/utils/gormv2"
-	"github.com/chenwm-topstar/chargingc/utils/redigo"
-	"github.com/chenwm-topstar/chargingc/utils/uuid"
+	"github.com/chenwm-topstar/pbs/commonpb"
+	"github.com/chenwm-topstar/utils/gormv2"
+	"github.com/chenwm-topstar/utils/redigo"
+	"github.com/chenwm-topstar/utils/uuid"
 	"github.com/gomodule/redigo/redis"
 	"github.com/pkg/errors"
 )

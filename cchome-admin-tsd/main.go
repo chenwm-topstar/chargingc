@@ -10,9 +10,9 @@ import (
 	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/template"
 	_ "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/routers"
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/transac"
-	"github.com/chenwm-topstar/chargingc/utils/flags"
-	"github.com/chenwm-topstar/chargingc/utils/gormv2"
-	"github.com/chenwm-topstar/chargingc/utils/redigo"
+	"github.com/chenwm-topstar/utils/flags"
+	"github.com/chenwm-topstar/utils/gormv2"
+	"github.com/chenwm-topstar/utils/redigo"
 	"github.com/joho/godotenv"
 )
 

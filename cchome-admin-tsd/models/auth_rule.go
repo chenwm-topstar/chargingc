@@ -1,6 +1,6 @@
 package models
 
-import "github.com/chenwm-topstar/chargingc/utils/uuid"
+import "github.com/chenwm-topstar/utils/uuid"
 
 type KindAuthRuleStatus int32
 

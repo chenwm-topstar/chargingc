@@ -12,7 +12,7 @@ import (
 	"github.com/astaxie/beego/session"
 	_ "github.com/astaxie/beego/session/redis"
 	"github.com/astaxie/beego/validation"
-	"github.com/chenwm-topstar/chargingc/utils/uuid"
+	"github.com/chenwm-topstar/utils/uuid"
 	"github.com/sirupsen/logrus"
 
 	pHttp "github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/http"

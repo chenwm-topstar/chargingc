@@ -8,7 +8,7 @@ import (
 
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/internal/evsectl"
 	"github.com/chenwm-topstar/chargingc/cchome-admin-tsd/models"
-	"github.com/chenwm-topstar/chargingc/utils/gormv2"
+	"github.com/chenwm-topstar/utils/gormv2"
 	"gopkg.in/yaml.v2"
 )
 

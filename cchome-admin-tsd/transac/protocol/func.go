@@ -1,6 +1,6 @@
 package protocol
 
-import "github.com/chenwm-topstar/chargingc/pbs/commonpb"
+import "github.com/chenwm-topstar/pbs/commonpb"
 
 func getConnectState(s uint8) commonpb.ConnectorState {
 	if s&1 == 1 {

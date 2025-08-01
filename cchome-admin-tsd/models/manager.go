@@ -3,8 +3,8 @@ package models
 import (
 	"context"
 
-	"github.com/chenwm-topstar/chargingc/utils/gormv2"
-	"github.com/chenwm-topstar/chargingc/utils/uuid"
+	"github.com/chenwm-topstar/utils/gormv2"
+	"github.com/chenwm-topstar/utils/uuid"
 )
 
 // Manager 管理员

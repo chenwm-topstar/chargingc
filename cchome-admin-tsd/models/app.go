@@ -8,10 +8,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/chenwm-topstar/chargingc/utils/gormv2"
-	"github.com/chenwm-topstar/chargingc/utils/lg"
-	"github.com/chenwm-topstar/chargingc/utils/slices"
-	"github.com/chenwm-topstar/chargingc/utils/uuid"
+	"github.com/chenwm-topstar/utils/gormv2"
+	"github.com/chenwm-topstar/utils/lg"
+	"github.com/chenwm-topstar/utils/slices"
+	"github.com/chenwm-topstar/utils/uuid"
 	"github.com/pkg/errors"
 	"gopkg.in/gomail.v2"
 )
