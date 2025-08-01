@@ -65,12 +65,19 @@ github.com/cespare/xxhash/v2 v2.2.0 h1:DC2CZ1Ep5Y4k3ZQ899DldepgrayRUGE6BBZ/cd9Cj
 github.com/cespare/xxhash/v2 v2.2.0/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
 github.com/chenwm-topstar/chargingc v0.0.0-20250731224554-c211635721c6 h1:qamhrNiylf1XyyDlkKIyKuc8J7ArDpwPFiTHnzXmoz4=
 github.com/chenwm-topstar/chargingc v0.0.0-20250731224554-c211635721c6/go.mod h1:Dc81/DJ/cmXroO9Og3wMoD3v/WkHPpGMxmOQ9fc6E6U=
+<<<<<<< HEAD
 github.com/chenwm-topstar/pbs v1.3.1-0.20231214093228-c41541a73a24 h1:JNn2ay9zUgSugIJlaOxbGKma3LDEIIZew5Pue3qz6LI=
 github.com/chenwm-topstar/pbs v1.3.1-0.20231214093228-c41541a73a24/go.mod h1:spuLMIV+QNwj2OA++QXCv3KKWf3dXKRaK5m6C7AZvjg=
 github.com/chenwm-topstar/utils v0.0.0-20250801023433-afe368ab0e9f h1:Gd5rUuY058VJzQpkrOfxADWauH9vpsahqDmI2YRb7kA=
 github.com/chenwm-topstar/utils v0.0.0-20250801023433-afe368ab0e9f/go.mod h1:edI4Ec5cOnIzhMx5OXyvt8stnl05J3sLpyCYU8SpE4w=
 github.com/chenwm-topstar/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 h1:oBQdxcsRWSIFLNdvHWfO+o9D8lrcDZ4MBaul2gEShHI=
 github.com/chenwm-topstar/utils v1.3.1-0.20231207085537-ac3fbbfe33d7/go.mod h1:Jg8RprAyo1enAaoR8208XKZbXS7CYjesSyh78bJMquM=
+=======
+github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24 h1:JNn2ay9zUgSugIJlaOxbGKma3LDEIIZew5Pue3qz6LI=
+github.com/chenwm-topstar/chargingc/pbs v1.3.1-0.20231214093228-c41541a73a24/go.mod h1:spuLMIV+QNwj2OA++QXCv3KKWf3dXKRaK5m6C7AZvjg=
+github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7 h1:oBQdxcsRWSIFLNdvHWfO+o9D8lrcDZ4MBaul2gEShHI=
+github.com/chenwm-topstar/chargingc/utils v1.3.1-0.20231207085537-ac3fbbfe33d7/go.mod h1:Jg8RprAyo1enAaoR8208XKZbXS7CYjesSyh78bJMquM=
+>>>>>>> b0ec86e9101790fe9be22644fc56b2fe63a8e06d
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
